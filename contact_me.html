@@ -4,10 +4,24 @@
     <title>Contact Me</title>
     <link type="text/css" rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
+<body onload='document.form1.text1.focus()'>
     <div>
     <p id="left">Phone: +91-9085281868.<br/>Gmail: bhupathiraju34@gmail.com</p>
-    <p id="right">Facebook: <a href="https://www.facebook.com/bhupathiraju.tadi.9">Bhupathi Raju</p>
-    <div>
+    <p id="right">Facebook: <a href="https://www.facebook.com/bhupathiraju.tadi.9">Bhupathi Raju</a></p>
+    </div>
+    <div class="mail">  
+        <h3>Input an email and Submit</h3>  
+     <form name="form1" action="#" onsubmit="required()">   	
+       <ul>   
+         <li><input type='text' name='text1' placeholder='Name'/></li>
+         x<li class="rq">*Required Field</li>    
+         <li><input type='text' name ='text2' placeholder='Email'/></li>    
+         <li>&nbsp;</li>  
+         <li class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text2)"/></li>  
+         <li>&nbsp;</li>  
+       </ul>  
+     </form>  
+   </div>  
+<script src="email-validation.js"></script>  
 </body>
 </html>

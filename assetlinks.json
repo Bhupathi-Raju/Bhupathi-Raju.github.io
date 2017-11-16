@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.zemoso.zestagram",
+    "sha256_cert_fingerprints":
+    ["D3:72:98:F5:3C:7E:19:9B:09:CD:36:E7:FD:FE:D5:68:0E:86:EE:81:27:44:88:E2:AC:05:0A:DC:9B:0E:D2:6C"]
+  }
+}]
