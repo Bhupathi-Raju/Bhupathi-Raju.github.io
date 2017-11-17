@@ -1,19 +1,21 @@
 var modal = document.getElementById('myModal');
 var modal1 = document.getElementById('myModal1');
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var edit = document.getElementById("edit");
 var btn1 = document.getElementById("myBtn1");
 var close = document.getElementById('clse');
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
+edit.onclick = function() {
     modal.style.display = "inline-block";
+    document.forms["form1"].reset();
 }
 
 btn1.onclick = function() {
    modal1.style.display = "inline-block"; 
+   document.forms["form2"].reset();
 }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

@@ -38,13 +38,10 @@ btn3.onclick = function() {
     obj.images.forEach(function(obj){
     var url = path+obj.bannerImg1;
     if(url== urlEdit)
-     {  
-        console.log(true + obj.id);
-       var id = obj.id+1;
-       console.log(id);
+     { 
        var img = document.getElementById(obj.id);
-    var parent =document.getElementById("img-container");
-       document.getElementById("pre").src = document.getElementById(id).src;
+       var parent =document.getElementById("img-container");  
+       document.getElementById("pre").src = "http://www.noborders-group.com/templates/newsletter/png/removed-occupations-australia-2017.jpg";
        img.parentNode.removeChild(img);
     }
     else
@@ -74,23 +71,26 @@ return false;
 function required()  
 {  
 var empt = document.forms["form1"]["text1"].value;
-if(boolean)
-{
 if (empt =="")  
 {
 boolean= false; 
-alert("Please input a Name");   
+alert("Please input your Name");   
 return false;
 }  
 else   
 {  
 boolean = true;
-}  
-} 
+}   
 }
- 
+
 function ValidateUrl()
 {
+var empt = document.forms["form1"]["text1"].value;
+if(empt == "")
+{
+alert("Please input a name");
+return false;
+}
 function imageExists(url, callback) {
   var img = new Image();
   img.onload = function() { callback(true); };
@@ -117,7 +117,9 @@ imageExists(imageUrl, function(exists) {
        console.log(false);
     })
     console.log(urlEdit + "adkhsad");
+    console.log(imageUrl);
     return false;
+   
    /* var str = JSON.stringify(data);
     var obj = JSON.parse(str);
     console.log(str); 
@@ -138,6 +140,12 @@ imageExists(imageUrl, function(exists) {
 
 function ValidateUrl2()
 {
+var empt = document.forms["form2"]["text1"].value;
+if(empt == "")
+{
+alert("Please input a name");
+return false;
+}
 function imageExists(url, callback) {
   var img = new Image();
   img.onload = function() { callback(true); };
